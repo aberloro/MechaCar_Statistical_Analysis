@@ -31,6 +31,13 @@ The above summary statistics tell us about the model's ability to predict mpg:
 
 ## Summary Statistics on Suspension Coils
 
+--- insert coils_total_summary.png ---
+Looking at the total summary of all lots collectively, the variance of 62.29 does *not* exceed 100 PSI.  
+
+--- insert coils_lot_summary.png ---
+Looking at the summary stats per lot: Lots 1 and 2 are within the design specs at only 0.98 and 7.47 respectively.  Lot 3 has a variance of over 170 and therefore exceeds the limit of 100 PSI. 
+
+
 ## T-Tests on Sespension COils
 
 ## Study Design: MechaCar vs Competition
