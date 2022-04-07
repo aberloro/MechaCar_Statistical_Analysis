@@ -15,7 +15,7 @@ Production troubles are blocking progress on the MechaCar prototype. An analysis
  - Data Sources: [MechaCar_mpg.csv](https://github.com/aberloro/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv), [Suspension_Coil.csv](https://github.com/aberloro/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv)
  - Technology: R, RStudio
 
-## Linear Regression to Predict MPG
+## D1: Linear Regression to Predict MPG
  The miles per gallon (mpg) can be predicted by the following linear model:
 
  mpg =  (6.267)vehicle_length + (0.00125)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD - 104.0
@@ -29,7 +29,7 @@ The above summary statistics tell us about the model's ability to predict mpg:
 
  - This linear model effectively predicts the miles per gallon of the MechaCar prototype because the r-squared value is "strong" at over 0.7.  
 
-## Summary Statistics on Suspension Coils
+## D2: Summary Statistics on Suspension Coils
 
 Looking at the total summary of all lots collectively, the variance of 62.29 does *not* exceed 100 PSI:
 ![coils_total_summary](https://user-images.githubusercontent.com/93740725/162118430-7ae3defa-a472-4175-8535-048c589fe6b5.png)
@@ -39,7 +39,7 @@ Looking at the summary stats per lot: Lots 1 and 2 are within the design specs a
 ![coils_lot_summary](https://user-images.githubusercontent.com/93740725/162118456-edf28509-ba26-4be0-9eda-7b11f5b46f8a.png)
 
 
-## T-Tests on Sespension Coils
+## D3: T-Tests on Sespension Coils
 
 ### All Lots
 ![t-TestAll](https://user-images.githubusercontent.com/93740725/162118472-43fc3a7d-a730-4430-98e7-8d8db69c38cc.png)
@@ -62,5 +62,5 @@ A t-Test p-value of 0.61 tells us to *accept* the null hypothesis that there is 
 A t-Test p-value of 0.042 tells us to *reject* the null hypothesis.  There is a statistical difference between the PSI of Lot3 mean of 1496.14 and the population mean of 1500. 
 
 
-## Study Design: MechaCar vs Competition
+## D4: Study Design: MechaCar vs Competition
 
