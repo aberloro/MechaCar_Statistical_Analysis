@@ -41,16 +41,19 @@ head(MPG)
 ```
 
 ```{r}
-#Multiple Linear regression
+#Multiple Linear Regression
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MPG) 
-
-# mpg =  6.267e+00vehicle_length + 1.245e-03vehicle_weight + 6.877e-02spoiler_angle + 3.546e+00ground_clearance + -3.411e+0AWD - 1.040e+02
 ```
 ```{r}
-#generate summary statistics with p=value and r-squared value for linear regression model
+# mpg =  (6.267)vehicle_length + (0.00125)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD - 104.0
+```
+
+```{r}
+#generate summary statistics for linear regression model
 
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MPG))
-
+```
+```{r}
 # p-value: 5.35e-11
 # r-squared value: 0.7149
 ```

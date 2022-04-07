@@ -16,7 +16,19 @@ Production troubles are blocking progress on the MechaCar prototype. An analysis
  - Technology: R, RStudio
 
 ## Linear Regression to Predict MPG
- 
+ The miles per gallon (mpg) can be predicted by the following linear model:
+
+ mpg =  (6.267)vehicle_length + (0.00125)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD - 104.0
+
+ --- insert LM_SummaryStats Image ----
+
+The above summary statistics tell us about the model's ability to predict mpg:
+ - The Pr(>|t|) values show the probability that the coeffecient contributes random variance.  A Pr(>|t|) value below 0.05 mean that coeffecient is statistically non-random: vehicle length, vechile ground clearance, and the intercept all have statistically significant impact on miles per gallon for this MechaCar prototype.  
+
+ - The p-value is 5.35e-11, much less than the 0.05 threshhold where we would accept the null hypothesis. We therefor accept the alternate hypothesis: the slope of the linear model is not zero. 
+
+ - This linear model effectively predicts the miles per gallon of the MechaCar prototype because the r-squared value is "strong" at over 0.7.  
+
 ## Summary Statistics on Suspension Coils
 
 ## T-Tests on Sespension COils
