@@ -41,7 +41,7 @@ Looking at the summary stats per lot: Lots 1 and 2 are within the design specs a
 ![coils_lot_summary](https://user-images.githubusercontent.com/93740725/162118456-edf28509-ba26-4be0-9eda-7b11f5b46f8a.png)
 
 
-## D3: T-Tests on Sespension Coils
+## D3: T-Tests on Suspension Coils
 
 ### All Lots
 ![t-TestAll](https://user-images.githubusercontent.com/93740725/162118472-43fc3a7d-a730-4430-98e7-8d8db69c38cc.png)
@@ -84,7 +84,7 @@ The null hypothesis H<sub>01</sub>: The slope of the linear model is zero.
 The alternate hypotheses H<sub>a1</sub>: The slope of the linear model is not zero. 
 
 #### Phase 1 Statistical Test
-Multiple Linear Regression
+Multiple Linear Regression will predict a y-intercept and coefecients for each independent metric.  The r-squared value will tell us the model's ability to predict resale value, if the alternate hypothesis is accepted. 
 
 #### Phase 1 Data
 The linear regression model will require resale values of other MechaCar Models in the same vehicle class, assuming good condition, as well as the mileage, safety rating, fuel economy, new-sale price, and lifetime maintenance costs for each vehicle. 
@@ -103,7 +103,7 @@ The null hypothesis H<sub>02</sub>: The MechaCar prototype's resale value is *no
 The alternate hypotheses H<sub>a2</sub>: The MechaCar prototype's resale value *is* statistically different from the resale value of the competition.
 
 #### Phase 2 Statistical Test
-Two-Sample t-Test
+Two-Sample t-Test will show if there is a sttistical difference between the distribution means of the MechaCar prototype resale value and that of the competition. 
 
 #### Phase 2 Data
 The 2-Sample t-Test will require the predicted resale value of the MechaCar prototype as well as available resale data of the competition, other factors such as mileage and condition held equal. 
