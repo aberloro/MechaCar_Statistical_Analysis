@@ -83,3 +83,24 @@ lot_summary <- coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI
 lot_summary
 ```
 
+### Deliverable 3: t-Test on Suspension Coils ###
+```{r}
+# t.test all lots 
+t.test(coils$PSI, mu = 1500)
+```
+
+```{r}
+#Lot 1
+t.test(subset(coils,Manufacturing_Lot == "Lot1")$PSI, mu = 1500)
+```
+
+```{r}
+#Lot 2
+t.test(subset(coils,Manufacturing_Lot == "Lot2")$PSI, mu = 1500)
+```
+
+```{r}
+#Lot 3
+t.test(subset(coils,Manufacturing_Lot == "Lot3")$PSI, mu = 1500)
+```
+

@@ -38,7 +38,20 @@ Looking at the total summary of all lots collectively, the variance of 62.29 doe
 Looking at the summary stats per lot: Lots 1 and 2 are within the design specs at only 0.98 and 7.47 respectively.  Lot 3 has a variance of over 170 and therefore exceeds the limit of 100 PSI. 
 
 
-## T-Tests on Sespension COils
+## T-Tests on Sespension Coils
+
+--- t-testAll ---
+A t-Test p-value of 0.060 tells us to *accept* the null hypothesis that there is no statistical difference between the PSI of all Lots and the population mean of 1500.  
+
+---tTestLot1 ---
+A t-Test p-value of 1 tells us to *accept* the null hypothesis that there is no statistical difference between the PSI of Lot1 and the population mean of 1500. 
+
+--- tTestLot2 ----
+A t-Test p-value of 0.61 tells us to *accept* the null hypothesis that there is no statistical difference between the PSI of Lot2 and the population mean of 1500. 
+
+--- tTest Lot3 ----
+A t-Test p-value of 0.042 tells us to *reject* the null hypothesis.  There is a statistical difference between the PSI of Lot3 mean of 1496.14 and the population mean of 1500. 
+
 
 ## Study Design: MechaCar vs Competition
 
