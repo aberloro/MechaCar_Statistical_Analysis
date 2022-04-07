@@ -1,0 +1,57 @@
+---
+title: "MechaCarChallenge"
+output: html_document
+date: '2022-04-07'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### Deliverable 1: Linear Regression to Predict MPG ###
+```{r}
+#load dplyr package
+library(tidyverse)
+```
+```{r}
+# read in csv as a dataframe
+MPG <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+
+head(MPG)
+```
+
+```{r}
+#Multiple Linear regression
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MPG) 
+
+# mpg =  6.267e+00vehicle_length + 1.245e-03vehicle_weight + 6.877e-02spoiler_angle + 3.546e+00ground_clearance + -3.411e+0AWD - 1.040e+02
+```
+```{r}
+#generate summary statistics with p=value and r-squared value for linear regression model
+
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=MPG))
+
+# p-value: 5.35e-11
+# r-squared value: 0.7149
+```
+
