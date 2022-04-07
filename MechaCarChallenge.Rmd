@@ -58,3 +58,28 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 # r-squared value: 0.7149
 ```
 
+### Deliverable 2: Visualize Trip Analysis ###
+
+```{r}
+# import and read in suspension_coil.csv as table
+coils <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+
+head(coils)
+```
+
+```{r}
+# create total summary dataframe
+
+total_summary <- coils %>%  summarize(Mean=mean(PSI),Medain=median(PSI),Variance = var(PSI), SD = sd(PSI),  .groups = 'keep')
+
+total_summary
+```
+
+```{r}
+# create lot_summary to group_by() mfnu lots
+
+lot_summary <- coils %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Medain=median(PSI),Variance = var(PSI), SD = sd(PSI),  .groups = 'keep')
+
+lot_summary
+```
+
