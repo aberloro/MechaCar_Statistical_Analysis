@@ -74,37 +74,35 @@ compare the MechaCar prototype resale value against the competition.
 
 ### Phase 1: Predict Resale Value
 
-#### Phase 1 Metrics to be Tested
+Metrics to be Tested:
  - Dependent Variable: resale value
  - Independent Variables: safety rating, fuel economy, new-sale price, mileage, life time maintanance costs, condition of vehicle
 
-#### Phase 1 Hypotheses 
-The null hypothesis H<sub>01</sub>: The slope of the linear model is zero. 
+Hypotheses:
+ - The null hypothesis H<sub>01</sub>: The slope of the linear model is zero. 
+ - The alternate hypotheses H<sub>a1</sub>: The slope of the linear model is not zero. 
 
-The alternate hypotheses H<sub>a1</sub>: The slope of the linear model is not zero. 
+Statistical Test:
+ - Multiple Linear Regression will predict a y-intercept and coefecients for each independent metric.  
+ - The r-squared value will tell us the model's ability to predict resale value, if the alternate hypothesis is accepted. 
 
-#### Phase 1 Statistical Test
-Multiple Linear Regression will predict a y-intercept and coefecients for each independent metric.  The r-squared value will tell us the model's ability to predict resale value, if the alternate hypothesis is accepted. 
-
-#### Phase 1 Data
-The linear regression model will require resale values of other MechaCar Models in the same vehicle class, assuming good condition, as well as the mileage, safety rating, fuel economy, new-sale price, and lifetime maintenance costs for each vehicle. 
-
-If the null hypothesis is rejected and we find the slope of the linear regression model *is not* equal to zero, then we can proceed to Phase 2 of the study.
+Phase 1 Data:
+ - The linear regression model will require resale values of other MechaCar Models in the same vehicle class, assuming good condition, as well as the mileage, safety rating, fuel economy, new-sale price, and lifetime maintenance costs for each vehicle. 
+ - If the null hypothesis is rejected and we find the slope of the linear regression model *is not* equal to zero, then we can proceed to Phase 2 of the study.
 
 ### Phase 2: Compare MechaCar Resale Value to the Competition
 
-#### Phase 2 Metrics to be Tested
+Metrics to be Tested:
  - Predicted resale value for MechaCar prototype, assuming good condition.
  - Available resale value for the competition, also assuming good condition. 
 
-#### Phase 2 Hypotheses 
-The null hypothesis H<sub>02</sub>: The MechaCar prototype's resale value is *not() statistically different from the resale value of the competition.
+Hypotheses: 
+ - The null hypothesis H<sub>02</sub>: The MechaCar prototype's resale value is *not() statistically different from the resale value of the competition.
+ - The alternate hypotheses H<sub>a2</sub>: The MechaCar prototype's resale value *is* statistically different from the resale value of the competition.
 
-The alternate hypotheses H<sub>a2</sub>: The MechaCar prototype's resale value *is* statistically different from the resale value of the competition.
+Statistical Test:
+ - Two-Sample t-Test will show if there is a statistical difference between the distribution means of the MechaCar prototype resale value and that of the competition. 
 
-#### Phase 2 Statistical Test
-Two-Sample t-Test will show if there is a sttistical difference between the distribution means of the MechaCar prototype resale value and that of the competition. 
-
-#### Phase 2 Data
-The 2-Sample t-Test will require the predicted resale value of the MechaCar prototype as well as available resale data of the competition, other factors such as mileage and condition held equal. 
+Phase 2 Data:
+ - The 2-Sample t-Test will require the predicted resale value of the MechaCar prototype as well as available resale data of the competition, other factors such as mileage and condition held equal. 
 
