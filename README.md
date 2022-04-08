@@ -97,7 +97,7 @@ Metrics to be Tested:
  - Available resale value for the competition, also assuming good condition. 
 
 Hypotheses: 
- - The null hypothesis H<sub>02</sub>: The MechaCar prototype's resale value is *not() statistically different from the resale value of the competition.
+ - The null hypothesis H<sub>02</sub>: The MechaCar prototype's resale value is *not* statistically different from the resale value of the competition.
  - The alternate hypotheses H<sub>a2</sub>: The MechaCar prototype's resale value *is* statistically different from the resale value of the competition.
 
 Statistical Test:
