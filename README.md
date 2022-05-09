@@ -7,7 +7,7 @@ Production troubles are blocking progress on the MechaCar prototype. An analysis
 
 ### Deliverables
  - Liner Regression to Predict MPG
- - Summary Staatistics on Suspension Coils
+ - Summary Statistics on Suspension Coils
  - T-Test on Suspension Coils
  - Study Comparing MechaCar to the Competition
  
